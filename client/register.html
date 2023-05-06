@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register New FaceID</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="float-msg">
+        <h4>Error: </h4>
+        <button class="error-close">+</button>
+        <p class="error-msg"></p>
+    </div>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="video-wrapper">
+                <video id="video-captrure" autoplay="true"></video>
+                <span class="counter-overlay">3</span>
+            </div>
+            <button type="button" id="register" disabled>
+                <p class="text-btn">Register</p>
+            </button>
+            <div class="loader"></div>
+        </div>
+       
+        <div class="overlay"></div>
+        
+    </div>
+    <a href="index.html" class="float-btn">Back</a>
+    <div class="float-form">
+        <h4>Enter your email</h4>
+        <div class="email-checkpoint">
+            <input type="email" title="email" name="email" id="email">
+            <button type="button" class="email-checkpoint-btn">Submit</button>
+        </div>
+    </div>
+    <script type="module" src="register.js"></script>
+</body>
+
+</html>
